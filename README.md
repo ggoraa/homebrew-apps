@@ -1,10 +1,10 @@
-# Ggoraa Ggoraa
+# GGorAA Homebrew Tap
 
 ## How do I install these formulae?
 
-`brew install ggoraa/ggoraa/<formula>`
+`brew install ggoraa/software/<formula>`
 
-Or `brew tap ggoraa/ggoraa` and then `brew install <formula>`.
+Or `brew tap ggoraa/software` and then `brew install <formula>`.
 
 ## Documentation
 
