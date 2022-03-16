@@ -21,7 +21,7 @@ class Gyb < Formula
 
   def install
     resource("gyb.py").stage { bin.install "gyb.py" }
-    system "awk" "'NR==1 {$0=\"different\"} 1'", "gyb"
+    system "sed", "-ie", "'1s/python2.7/python3/'", "gyb"
     bin.install "gyb"
     chmod 0755, bin/"gyb"
   end
