@@ -20,7 +20,7 @@ class Gyb < Formula
   end
 
   def install
-    system "touch" "gyb.patch"
+    system "touch", "gyb.patch"
     system "echo", "--- gyb-og	2022-03-16 17:51:58.000000000 +0200", ">>", "gyb.patch"
     system "echo", "+++ gyb	2022-03-16 17:50:51.000000000 +0200", ">>", "gyb.patch"
     system "echo", "@@ -1,3 +1,3 @@", ">>", "gyb.patch"
