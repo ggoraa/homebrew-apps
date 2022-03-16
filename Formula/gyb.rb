@@ -8,7 +8,7 @@ class Gyb < Formula
   desc "\"Generate Your Boilerplate\""
   homepage "https://nshipster.com/swift-gyb/"
   url "https://raw.githubusercontent.com/apple/swift/17e5594bec7cebe980857e4fe3e05837708f9f62/utils/gyb"
-  version "2019-01-18"
+  version "2022-03-16"
   sha256 "0a97b3ac257fa29d6240d1878590facd1d80053491cc14601f7e68bb182a29b1"
 
   depends_on xcode: ["10.0", :build]
