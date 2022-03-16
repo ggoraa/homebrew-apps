@@ -20,6 +20,7 @@ class Gyb < Formula
   end
 
   def install
+    resource("gyb.py").stage { bin.install "gyb.py" }
     system "touch", "gyb.patch"
     system "echo", "\"--- gyb-og	2022-03-16 17:51:58.000000000 +0200\"", ">>", "gyb.patch"
     system "echo", "\"+++ gyb	2022-03-16 17:50:51.000000000 +0200\"", ">>", "gyb.patch"
@@ -29,7 +30,6 @@ class Gyb < Formula
     system "echo", "\"import gyb\"", ">>", "gyb.patch"
     system "echo", "\"gyb.main()\"", ">>", "gyb.patch"
     system "patch", "gyb", "gyb.patch"
-    resource("gyb.py").stage { bin.install "gyb.py" }
     bin.install "gyb"
     chmod 0755, bin/"gyb"
   end
