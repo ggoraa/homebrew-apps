@@ -21,14 +21,13 @@ class Gyb < Formula
 
   def install
     system "touch" "gyb.patch"
-    system "echo", "--- gyb-og	2022-03-16 17:51:58.000000000 +0200
-+++ gyb	2022-03-16 17:50:51.000000000 +0200
-@@ -1,3 +1,3 @@
--#!/usr/bin/env python2.7
-+#!/usr/bin/env python3
- import gyb
- gyb.main()
-", ">", "gyb.patch"
+    system "echo", "--- gyb-og	2022-03-16 17:51:58.000000000 +0200", ">>", "gyb.patch"
+    system "echo", "+++ gyb	2022-03-16 17:50:51.000000000 +0200", ">>", "gyb.patch"
+    system "echo", "@@ -1,3 +1,3 @@", ">>", "gyb.patch"
+    system "echo", "-#!/usr/bin/env python2.7", ">>", "gyb.patch"
+    system "echo", "+#!/usr/bin/env python3", ">>", "gyb.patch"
+    system "echo", "import gyb", ">>", "gyb.patch"
+    system "echo", "gyb.main()", ">>", "gyb.patch"
     system "patch", "gyb", "gyb.patch"
     resource("gyb.py").stage { bin.install "gyb.py" }
     bin.install "gyb"
