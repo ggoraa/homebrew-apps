@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install ggoraa/brew/<formula>`
+`brew install ggoraa/apps/<formula>`
 
-Or `brew tap ggoraa/brew` and then `brew install <formula>`.
+Or `brew tap ggoraa/apps` and then `brew install <formula>`.
 
 ## Documentation
 
