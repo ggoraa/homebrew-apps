@@ -1,11 +1,11 @@
 cask "moc" do
-  version "0.2.0-p1"
-  sha256 "c7b8aba065d63885f3f71e0dcb200565ce135cf52fd9b75d4e6438edab4c57cb"
+  version "0.2.0-p2"
+  sha256 "1549ccd097ca037941db99695e0f1b1dd78d254153df2b6f794c064f194cb4f3"
 
-  url "https://github.com/ggoraa/moc/releases/download/#{version}/Moc.dmg"
+  url "https://github.com/mock-foundation/moc/releases/download/#{version}/Moc.dmg"
   name "Moc"
-  desc "A (really) native and powerful macOS Telegram client, optimized for moderating large communities and personal use."
-  homepage "https://github.com/ggoraa/moc"
+  desc "A (really) native and powerful macOS and iPadOS Telegram client, optimized for moderating large communities and personal use."
+  homepage "https://github.com/mock-foundation/moc"
 
   app "Moc.app"
 
