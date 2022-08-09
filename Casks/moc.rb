@@ -1,7 +1,8 @@
 cask "moc" do
-  version "0.2.0-p2"
-  sha256 "1f95c04d9b00f5adf7b9abc202136f1da5b3e33ce3a9665f5c84881ef05f0d48"
+  version "0.2.0-p3"
+  sha256 "5ae69161be7117912857487634b52b3f98e45a73a615356665fc11a41ea8732b"
   depends_on macos: ">= :monterey"
+  auto_updates true
 
   url "https://github.com/mock-foundation/moc/releases/download/#{version}/Moc.dmg"
   name "Moc"
@@ -10,5 +11,5 @@ cask "moc" do
 
   app "Moc.app"
 
-  zap trash: "~/Library/Containers/Moc"
+  zap trash: "~/Library/Containers/dev.ggoraa.moc"
 end
