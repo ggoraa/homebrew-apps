@@ -1,6 +1,6 @@
 cask "moc" do
-  version "0.2.0-p3"
-  sha256 "5ae69161be7117912857487634b52b3f98e45a73a615356665fc11a41ea8732b"
+  version "0.2.0"
+  sha256 "b57485c390f60cd766b59fbb31587ab56980bdf71e94a2f76dcc7b43fc024cba"
   depends_on macos: ">= :monterey"
   auto_updates true
 
